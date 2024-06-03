@@ -1,0 +1,54 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToolTip</title>
+
+    <style>
+        .filter_icon {
+            /* position: relative;
+            display: inline-block; */
+            margin-left: 86px;
+        }
+
+        .tooltip {
+            display: none;
+            width: 80px;
+            height: 20px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 6px;
+            /* position: absolute;
+            z-index: 1;
+            bottom: 100%; */
+            /* left: 88%; */
+            /* top: 28px; */
+            margin-left: 10px;
+            transform: translateX(-50%);
+            transition: opacity 0.3s;
+        }
+
+        .filter_icon:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="filter_icon">
+        <img class="add_icon_filter" src="Img/add_neww.png" alt="Add_icon">
+        <span class="tooltip">Tooltip Text</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

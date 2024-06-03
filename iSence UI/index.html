@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>iSence UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="d-flex container-fluid m-0 p-0 Parent">
+      <div class="sidebar">
+        <!-- SideBar Header Start Here -->
+        <div class="sidebar_header_cnt" id="logo">
+          <div class="control_logo_cnt">
+            <div class="sidebar_logo">
+              <img src="./Img/iScence_logo.png" alt="iScence_logo" />
+            </div>
+            <div class="Control_Panel">
+              <p>Control Panel</p>
+            </div>
+          </div>
+          <div class="sidebar_arrow">
+            <img
+              id="images"
+              value="show"
+              src="./Img/sidebar_arrow.png"
+              alt="sidebar_arrow"
+            />
+          </div>
+        </div>
+        <!-- SideBar Header End Here -->
+
+        <!-- SideBar BodyContent Start Here -->
+        <div class="sidebar_body_cnt">
+          <div class="general_container">
+            <div class="general_border"></div>
+            <div
+              style="
+                color: #e3e3e5;
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: -5px;
+              "
+            >
+              GENERAL
+            </div>
+            <div>
+              <i
+                style="font-size: 17px; cursor: pointer"
+                class="fa-light fa-greater-than"
+              ></i>
+            </div>
+          </div>
+
+          <div class="Data_container">
+            <div class="general_container" style="margin-top: -5px">
+              <div class="general_border">
+                <!-- <div></div> -->
+              </div>
+
+              <div class="dropdown">
+                <div
+                  class="dropbtn"
+                  style="
+                    color: #e3e3e5;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-left: -20px;
+                  "
+                >
+                  DATA
+                  <div>
+                    <i class="fas fa-greater-than" style="font-size: 12px"></i>
+                  </div>
+                </div>
+                <div class="dropdown-content">
+                  <div
+                    style="
+                      display: flex;
+                      column-gap: 10px;
+                      justify-content: flex-start;
+                      align-items: center;
+                      text-align: center;
+                    "
+                  >
+                    <div>
+                      <img
+                        src="Icons/Icon_Home.png"
+                        alt="alal"
+                        style="width: 20px"
+                      />
+                    </div>
+                    <div style="font-size: 15px">Home</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tree Menu -->
+          <div class="sidebar_menu_cnt">
+            <ul class="sub1">
+              <div class="Home_parent">
+                <div><img src="Icons/Icon_Home.png" alt="icon_home" /></div>
+                <div><li class="no-before">Home</li></div>
+              </div>
+
+              <div style="display: block; position: relative; right: 28px">
+                <!-- Connection Section Start Here -->
+                <li class="no-before">
+                  <div class="connection_parent">
+                    <div class="left_parent_c">
+                      <div>
+                        <img
+                          src="Icons/Icon_Connection.png"
+                          alt="Icon_Connection"
+                        />
+                      </div>
+                      <div>Connection</div>
+                    </div>
+                    <div>
+                      <img src="Icons/angle_down.png" alt="angle_down" />
+                    </div>
+                  </div>
+                  <ul class="sub2" style="margin-top: 22px">
+                    <li>
+                      <div class="circles"></div>
+                      <div class="Source_parent">
+                        <div>
+                          <img
+                            src="Icons/Icon_Sources.png"
+                            alt="Icon_Sources"
+                          />
+                        </div>
+                        <div>Sources</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="circles"></div>
+                      <div class="Destination_parent">
+                        <div>
+                          <img src="Icons/Icon_Destination.png" alt="Icon" />
+                        </div>
+                        <div>Destination</div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Connection Section End Here -->
+
+                <!-- Data Management Section Start Here -->
+                <li class="no-before">
+                  <div class="Data_Management_parent">
+                    <div class="left_parent_Data">
+                      <div>
+                        <img
+                          src="Icons/Icon_Data Management.png"
+                          alt="Icon_Connection"
+                        />
+                      </div>
+                      <div>Data Management</div>
+                    </div>
+                    <div>
+                      <img src="Icons/angle_down.png" alt="angle_down" />
+                    </div>
+                  </div>
+                  <ul class="sub2" style="margin-top: 20px">
+                    <li>
+                      <div class="circles"></div>
+                      <div class="Data_Schema">
+                        <div>
+                          <img
+                            src="Icons/Icon_Sources.png"
+                            alt="Icon_Sources"
+                          />
+                        </div>
+                        <div>Data Schema</div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="circles"></div>
+                      <div class="Extraction_Rule">
+                        <div>
+                          <img src="Icons/Icon_Destination.png" alt="Icon" />
+                        </div>
+                        <div>Extraction Rule</div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="circles"></div>
+                      <div class="Extraction_Rule">
+                        <div>
+                          <img src="Icons/Icon_Destination.png" alt="Icon" />
+                        </div>
+                        <div>Data Hub</div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="circles"></div>
+                      <div class="Extraction_Rule">
+                        <div>
+                          <img src="Icons/Icon_Destination.png" alt="Icon" />
+                        </div>
+                        <div>Monitoring</div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Data Management Section Start Here -->
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- SideBar BodyContent End Here -->
+
+        <!-- Sidebar Footer Start Here -->
+        <div class="sidebar_footer">
+          <img src="./Img/sidebar_footer_logo.svg" alt="sidebar_footer_logo" />
+        </div>
+        <!-- Sidebar Footer End Here -->
+      </div>
+
+      <div class="main_Body">
+        <div class="header_conatiner">
+          <div class="left_header_items">
+            <div class="catalog_search_field">
+              <input
+                class="catalog_search_field1"
+                placeholder="Search here..."
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="right_header_items">
+            <img class="help" src="./Img/Help.png" alt="help" />
+            <img src="./Img/workstation.png" alt="help" />
+            <img src="./Img/notification.png" alt="help" />
+            <img src="./Img/profile.png" alt="help" />
+          </div>
+        </div>
+        <!-- Wiazad section Start Here -->
+        <div class="wiazad_section">
+          <div class="wizad_list"><span>Control Panel</span></div>
+
+          <div class="wizad_list">
+            <i class="fa-solid fa-chevron-right"><span>Data</span></i>
+          </div>
+
+          <div class="wizad_list">
+            <i class="fa-solid fa-chevron-right"><span>Connection</span></i>
+          </div>
+
+          <div class="wizad_list">
+            <i class="fa-solid fa-chevron-right"><span>Source</span></i>
+          </div>
+
+          <div class="wizad_list">
+            <i class="fa-solid fa-chevron-right"
+              ><span class="last_active">Active</span></i
+            >
+          </div>
+        </div>
+        <!-- Wiazad section End Here -->
+
+        <!-- Filter sectionn start here -->
+        <div>
+          <div class="filter_containers">
+            <div class="filter_header">
+              <div class="filter_left">
+                <div class="catalog_active">Active</div>
+                <div>Catalog</div>
+                <div>Account</div>
+                <div>Dataflow</div>
+                <div>System View</div>
+              </div>
+              <div class="filter_right">
+                <div><img src="Img/search_logo.png" alt="search_logo" /></div>
+                <div><img src="Img/filter_logo.png" alt="filter_logo" /></div>
+                <div>
+                  <img
+                    src="Img/add_neww.png"
+                    alt="add_neww"
+                    style="margin-right: -2px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="Filter_body">
+              <div class="left_filter_container">
+                <div class="saved_btn_container">
+                  <div class="saved_filter_heading">Saved Filters</div>
+                  <div class="btn_conatiner">
+                    <button class="btn1">
+                      Test D<i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                    <button class="btn2">
+                      Test D<i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="right_filter_container">
+                <div class="top_filter_btn_group">
+                  <div class="left_filter_name">
+                    <div>
+                      <div class="input-group flex-nowrap">
+                        <input
+                          style="width: 210px; height: 38px"
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter Filter Name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right_filter_btn_icon">
+                    <div style="margin-right: 5.5px; display: flex; gap: 14px">
+                      <button class="save_btns">Save</button>
+                      <button class="save_button">Apply</button>
+                    </div>
+                    <i
+                      style="cursor: pointer"
+                      class="fa-solid fa-circle-xmark fa-lg"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="filter_container">
+                  <div class="f_filter">
+                    <div class="filter_by">Filter by</div>
+                    <div class="filter_body">
+                      <div class="filter_items">
+                        <select class="form-select" id="floatingSelect">
+                          <option selected>Filter By</option>
+                          <option value="1">DC Manager</option>
+                          <option value="2">Security Manager</option>
+                          <option value="2">Service Manager</option>
+                          <option value="2">Local/FTP</option>
+                          <option value="2">Other</option>
+                          <option value="3" style="background-color: #edf5fd">
+                            All
+                          </option>
+                        </select>
+                      </div>
+                      <div class="filter_items">
+                        <select class="form-select" id="floatingSelect">
+                          <option selected>Select Rule</option>
+                          <option value="1">DC Manager</option>
+                          <option value="2">Security Manager</option>
+                          <option value="2">Service Manager</option>
+                          <option value="2">Local/FTP</option>
+                          <option value="2">Other</option>
+                          <option value="3" style="background-color: #edf5fd">
+                            All
+                          </option>
+                        </select>
+                      </div>
+                      <div class="filter_items">
+                        <input
+                          class="form-control"
+                          id="exampleDataList"
+                          placeholder="Enter Value"
+                        />
+                      </div>
+                    </div>
+                    <div class="filter_icon">
+                      <img
+                        class="add_icon_filter"
+                        src="Img/add_neww.png"
+                        alt="Add_icon"
+                        style="cursor: pointer"
+                      />
+                      <span class="tooltip shadow">Add New</span>
+                    </div>
+                  </div>
+                  <div class="f_filter">
+                    <div class="filter_by filter_bys">
+                      <div class="filter_items">
+                        <select class="form-select" id="floatingSelect">
+                          <option selected>And</option>
+                          <option style="background-color: #edf5fd">or</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="filter_body">
+                      <div class="filter_items">
+                        <select class="form-select" id="floatingSelect">
+                          <option tests selected>Filter By</option>
+                          <option tests value="1">DC Manager</option>
+                          <option tests value="2">Security Manager</option>
+                          <option tests value="2">Service Manager</option>
+                          <option tests value="2">Local/FTP</option>
+                          <option tests value="2">Other</option>
+                          <option
+                            tests
+                            value="3"
+                            style="background-color: #edf5fd"
+                          >
+                            All
+                          </option>
+                        </select>
+                      </div>
+                      <div class="filter_items">
+                        <select class="form-select" id="floatingSelect">
+                          <option selected>Select Rule</option>
+                          <option value="1">DC Manager</option>
+                          <option value="2">Security Manager</option>
+                          <option value="2">Service Manager</option>
+                          <option value="2">Local/FTP</option>
+                          <option value="2">Other</option>
+                          <option value="3" style="background-color: #edf5fd">
+                            All
+                          </option>
+                        </select>
+                      </div>
+                      <div class="filter_items">
+                        <input
+                          class="form-control"
+                          id="exampleDataList"
+                          placeholder="Enter Value"
+                        />
+                      </div>
+                    </div>
+                    <div class="filter_icons">
+                      <img
+                        width="21px"
+                        class="add_icon_filter"
+                        src="https://cdn-icons-png.flaticon.com/128/9790/9790368.png"
+                        alt="Add_icon"
+                        style="cursor: pointer"
+                      />
+                      <span class="tooltips shadow">Delete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Filter sectionn End here -->
+
+          <!-- Table Section Start Here -->
+          <div class="table_container">
+            <div class="tables">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Source Title</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Last Updated</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Schemas</th>
+                    <th scope="col">Extraction rules</th>
+                    <th scope="col">Data Hub</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Syslog_UDP</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Hold</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Syslog_UDP</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Failed</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Syslog_UDP</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td class="network">
+                      <a href="#" class="network">Network</a>
+                    </td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Failed</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Syslog_UDP</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td>
+                      <a href="#" class="network">Network</a>
+                    </td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Hold</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>Running</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Table Footer Start Here -->
+            <div class="table_footer">
+              <div class="Table_left_footer_cnt">
+                <div class="left_child">
+                  <div>Showing</div>
+                  <div>
+                    <div class="footer_option">
+                      <select>
+                        <option selected class="values">10</option>
+                        <option>11</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>Rows</div>
+                </div>
+                <div class="right_child">
+                  <span>1-10 of 100 Entries</span>
+                </div>
+              </div>
+
+              <div class="Table_right_footer_cnt">
+                <div><span>Page</span></div>
+                <div><img src="Icons/footer_left_arrow.png" alt="icon" /></div>
+                <div class="footer_box_value"><span>1</span></div>
+                <div><img src="Icons/footer_right-arrow.png" alt="" /></div>
+                <div>of 50</div>
+              </div>
+            </div>
+            <!-- Table Footer Start Here -->
+          </div>
+          <!-- Table Section End Here -->
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
