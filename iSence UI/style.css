@@ -356,12 +356,31 @@
   flex-shrink: 1 !important;
 
   .table_container {
-    margin-top: 20px;
     margin: 11px 11px 0px 11px;
+
+    & ::-webkit-scrollbar {
+      width: 2.5px;
+    }
+
+    /* Define scrollbar track */
+    & ::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+    }
+
+    /* Define scrollbar thumb */
+    & ::-webkit-scrollbar-thumb {
+      background-color: #cbbceb;
+      border-radius: 6px;
+    }
+
+    /* Define the scrollbar thumb on hover */
+    & ::-webkit-scrollbar-thumb:hover {
+      background-color: #2680eb;
+    }
 
     .tables {
       overflow-y: auto;
-      max-height: 200px;
+      max-height: 515px;
       flex-grow: 1;
     }
 
@@ -393,12 +412,109 @@
             font-size: 14px;
             font-weight: 500;
           }
+
+          .running_conatiner {
+            display: flex;
+            column-gap: 5px;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #e0fff9;
+            color: #25b89d;
+            width: 80px;
+            height: 29px;
+            padding: 0px 7px 0px 7px;
+            border-radius: 6px;
+
+            .running_heading {
+              font-weight: 600;
+              font-size: 12px;
+              opacity: 1;
+            }
+
+            .running_circle {
+              column-gap: 4px;
+              width: 5px;
+              height: 5px;
+              background-color: #25b89d;
+              border-radius: 50%;
+            }
+          }
+
+          .Hold_conatiner {
+            display: flex;
+            column-gap: 5px;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #fff9e0;
+            color: #25b89d;
+            width: 80px;
+            height: 29px;
+            padding: 0px 7px 0px 7px;
+            border-radius: 6px;
+
+            .Hold_heading {
+              font-weight: 600;
+              font-size: 12px;
+              opacity: 1;
+              color: #b8a03f;
+            }
+
+            .Hold_circle {
+              column-gap: 4px;
+              width: 5px;
+              height: 5px;
+              background-color: #b8a03f;
+              border-radius: 50%;
+            }
+          }
+
+          .Failed_conatiner {
+            display: flex;
+            column-gap: 5px;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #fee0e6;
+            color: #25b89d;
+            width: 80px;
+            height: 29px;
+            padding: 0px 7px 0px 7px;
+            border-radius: 6px;
+
+            .Failed_heading {
+              font-weight: 700;
+              font-size: 12px;
+              opacity: 1;
+              color: #e93030;
+            }
+
+            .Failed_circle {
+              column-gap: 4px;
+              width: 5px;
+              height: 5px;
+              background-color: #e93030;
+              border-radius: 50%;
+            }
+          }
         }
       }
 
       thead {
         tr {
           border: 1px solid #e2e8f0;
+
+          .Last_update {
+            display: flex;
+            column-gap: 7px;
+
+            .table_heading {
+              color: #081e46;
+              font-weight: 700 !important;
+            }
+
+            & img {
+              cursor: pointer;
+            }
+          }
 
           th {
             background-color: #f1f5f9;
@@ -416,7 +532,7 @@
     .table_footer {
       background-color: #ffffff;
       height: 46px;
-      margin-top: -16px;
+      /* margin-top: -16px; */
       border-bottom-left-radius: 8px !important;
       border-bottom-right-radius: 8px;
       display: flex;
@@ -448,7 +564,8 @@
             align-items: center;
             box-shadow: none;
             outline: none;
-            color: blue;
+            color: #2680ea;
+            cursor: pointer;
           }
         }
 
@@ -471,6 +588,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        & img {
+          cursor: pointer;
+        }
 
         .footer_box_value {
           width: 44px;

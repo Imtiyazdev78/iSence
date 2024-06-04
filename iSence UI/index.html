@@ -262,6 +262,7 @@
             <img src="./Img/profile.png" alt="help" />
           </div>
         </div>
+
         <!-- Wiazad section Start Here -->
         <div class="wiazad_section">
           <div class="wizad_list"><span>Control Panel</span></div>
@@ -471,11 +472,55 @@
                   <tr>
                     <th scope="col">Source Title</th>
                     <th scope="col">Category</th>
-                    <th scope="col">Last Updated</th>
+                    <th scope="col">
+                      <div class="Last_update">
+                        <div class="table_heading">Last Updated</div>
+                        <div>
+                          <img
+                            width="14.5px"
+                            src="Icons/updown_icon.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </th>
                     <th scope="col">Status</th>
-                    <th scope="col">Schemas</th>
-                    <th scope="col">Extraction rules</th>
-                    <th scope="col">Data Hub</th>
+                    <th scope="col">
+                      <div class="Last_update">
+                        <div class="table_heading">Schemas</div>
+                        <div>
+                          <img
+                            width="14.5px"
+                            src="Icons/updown_icon.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="Last_update">
+                        <div class="table_heading">Extraction rules</div>
+                        <div>
+                          <img
+                            width="14.5px"
+                            src="Icons/updown_icon.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="Last_update">
+                        <div class="table_heading">Data Hub</div>
+                        <div>
+                          <img
+                            width="14.5px"
+                            src="Icons/updown_icon.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -483,48 +528,75 @@
                     <th scope="row">Syslog_UDP</th>
                     <td><a href="#" class="network">Network</a></td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Running</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">NMS_ITMS</th>
-                    <td><a href="#" class="network">Network</a></td>
-                    <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Hold</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Syslog_UDP</th>
-                    <td><a href="#" class="network">Network</a></td>
-                    <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>
+                      <div class="running_conatiner">
+                        <div class="running_circle"></div>
+                        <div class="running_heading">Running</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
                     <th scope="row">NMS_ITMS</th>
                     <td><a href="#" class="network">Network</a></td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Failed</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>
+                      <div class="Hold_conatiner">
+                        <div class="Hold_circle"></div>
+                        <div class="Hold_heading">Hold</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
                     <th scope="row">Syslog_UDP</th>
                     <td><a href="#" class="network">Network</a></td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>
+                      <div class="running_conatiner">
+                        <div class="running_circle"></div>
+                        <div class="running_heading">Running</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>
+                      <div class="Failed_conatiner">
+                        <div class="Failed_circle"></div>
+                        <div class="Failed_heading">Failed</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Syslog_UDP</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>
+                      <div class="running_conatiner">
+                        <div class="running_circle"></div>
+                        <div class="running_heading">Running</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
@@ -533,20 +605,30 @@
                       <a href="#" class="network">Network</a>
                     </td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Failed</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>
+                      <div class="Failed_conatiner">
+                        <div class="Failed_circle"></div>
+                        <div class="Failed_heading">Failed</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
                     <th scope="row">Syslog_UDP</th>
                     <td><a href="#" class="network">Network</a></td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>
+                      <div class="running_conatiner">
+                        <div class="running_circle"></div>
+                        <div class="running_heading">Running</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
                   <tr>
                     <th scope="row">NMS_ITMS</th>
@@ -554,10 +636,75 @@
                       <a href="#" class="network">Network</a>
                     </td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Hold</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>
+                      <div class="Hold_conatiner">
+                        <div class="Hold_circle"></div>
+                        <div class="Hold_heading">Hold</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>
+                      <div class="Failed_conatiner">
+                        <div class="Failed_circle"></div>
+                        <div class="Failed_heading">Failed</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>
+                      <div class="running_conatiner">
+                        <div class="running_circle"></div>
+                        <div class="running_heading">Running</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>
+                      <div class="running_conatiner">
+                        <div class="running_circle"></div>
+                        <div class="running_heading">Running</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">NMS_ITMS</th>
+                    <td><a href="#" class="network">Network</a></td>
+                    <td class="date_time">23/11/2023 at 8:30 am</td>
+                    <td>
+                      <div class="running_conatiner">
+                        <div class="running_circle"></div>
+                        <div class="running_heading">Running</div>
+                      </div>
+                    </td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
@@ -565,9 +712,9 @@
                     <td><a href="#" class="network">Network</a></td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
                     <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
@@ -575,9 +722,9 @@
                     <td><a href="#" class="network">Network</a></td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
                     <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
@@ -585,9 +732,9 @@
                     <td><a href="#" class="network">Network</a></td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
                     <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
 
                   <tr>
@@ -595,51 +742,10 @@
                     <td><a href="#" class="network">Network</a></td>
                     <td class="date_time">23/11/2023 at 8:30 am</td>
                     <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
                   </tr>
-
-                  <tr>
-                    <th scope="row">NMS_ITMS</th>
-                    <td><a href="#" class="network">Network</a></td>
-                    <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">NMS_ITMS</th>
-                    <td><a href="#" class="network">Network</a></td>
-                    <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">NMS_ITMS</th>
-                    <td><a href="#" class="network">Network</a></td>
-                    <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">NMS_ITMS</th>
-                    <td><a href="#" class="network">Network</a></td>
-                    <td class="date_time">23/11/2023 at 8:30 am</td>
-                    <td>Running</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                  </tr>
-                  
                 </tbody>
               </table>
             </div>
@@ -668,7 +774,7 @@
                 <div><span>Page</span></div>
                 <div><img src="Icons/footer_left_arrow.png" alt="icon" /></div>
                 <div class="footer_box_value"><span>1</span></div>
-                <div><img src="Icons/footer_right-arrow.png" alt="" /></div>
+                <div><img src="Icons/footer_right-arrow.png" alt="icon" /></div>
                 <div>of 50</div>
               </div>
             </div>
@@ -678,6 +784,7 @@
         </div>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
