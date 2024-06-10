@@ -307,6 +307,7 @@ body {
   }
 }
 
+
 svg {
   width: 4.25em;
   transform-origin: center;
@@ -346,6 +347,7 @@ circle {
   }
 }
 
+/* Right arrow animation section */
 @keyframes right_arrow {
   0% {
     transform: scale(1);
